@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contactez Cardy-Store pour toute question sur nos produits et services PlayStation">
+    <title>Contact - Cardy-Store</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- Header (identique à index.html) -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="Logo Cardy-Store" class="logo-img">
+                    <span class="logo-text">CARDY-STORE</span>
+                </a>
+            </div>
+            
+            <nav class="nav">
+                <button class="nav-toggle" aria-label="Ouvrir le menu">
+                    <span class="hamburger"></span>
+                </button>
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Accueil</a></li>
+                    <li class="nav-item"><a href="produits.html" class="nav-link">Produits</a></li>
+                    <li class="nav-item"><a href="index.html#services" class="nav-link">Services</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link active">Contact</a></li>
+                </ul>
+            </nav>
+            
+            <div class="header-actions">
+                <button class="search-toggle" aria-label="Recherche">
+                    <img src="icons/search.svg" alt="Recherche" class="icon">
+                </button>
+                <div class="search-box">
+                    <input type="text" placeholder="Rechercher..." class="search-input">
+                    <button class="search-btn">🔍</button>
+                </div>
+                <a href="#" class="cart-icon" aria-label="Panier">
+                    <img src="icons/cart.svg" alt="Panier" class="icon">
+                    <span class="cart-count">0</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="contact-page">
+        <div class="container">
+            <h1 class="page-title">Nous Contacter</h1>
+            
+            <div class="contact-content detailed">
+                <div class="contact-info">
+                    <div class="info-card">
+                        <h2>Informations de contact</h2>
+                        
+                        <div class="info-item">
+                            <div class="info-icon">📍</div>
+                            <div class="info-text">
+                                <h3>Adresse</h3>
+                                <p>Menontin, Église Catholique</p>
+                                <p>En face de l'immeuble blanc (au bord du pavé)</p>
+                                <p>Cotonou, Bénin</p>
+                            </div>
+                        </div>
+                        
+                        <div class="info-item">
+                            <div class="info-icon">📞</div>
+                            <div class="info-text">
+                                <h3>Téléphone</h3>
+                                <p>+229 01 66 36 47 30</p>
+                                <p>+229 97 86 54 32</p>
+                            </div>
+                        </div>
+                        
+                        <div class="info-item">
+                            <div class="info-icon">⏰</div>
+                            <div class="info-text">
+                                <h3>Horaires d'ouverture</h3>
+                                <p>Lundi - Vendredi: 8h - 19h</p>
+                                <p>Samedi: 9h - 18h</p>
+                                <p>Dimanche: 10h - 15h</p>
+                            </div>
+                        </div>
+                        
+                        <div class="social-media">
+                            <h3>Suivez-nous</h3>
+                            <div class="social-icons">
+                                <a href="#" class="social-link" aria-label="WhatsApp">📱</a>
+                                <a href="#" class="social-link" aria-label="Facebook">📘</a>
+                                <a href="#" class="social-link" aria-label="Instagram">📸</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="map-container">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3970.023152999625!2d2.3912!3d6.3703!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNsKwMjInMTMuMCJOIDLCsDIzJzI4LjMiRQ!5e0!3m2!1sfr!2sbj!4v1648756787890!5m2!1sfr!2sbj" 
+                            width="100%" 
+                            height="400" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <div class="form-card">
+                        <h2>Envoyez-nous un message</h2>
+                        <p>Remplissez le formulaire ci-dessous et nous vous répondrons dans les plus brefs délais.</p>
+                        
+                        <form id="contactForm">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="name">Nom complet *</label>
+                                    <input type="text" id="name" name="name" required>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="email">Email *</label>
+                                    <input type="email" id="email" name="email" required>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="phone">Téléphone</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="subject">Sujet *</label>
+                                <select id="subject" name="subject" required>
+                                    <option value="">Sélectionnez un sujet</option>
+                                    <option value="question">Question sur un produit</option>
+                                    <option value="repair">Demande de réparation</option>
+                                    <option value="order">Suivi de commande</option>
+                                    <option value="other">Autre</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Message *</label>
+                                <textarea id="message" name="message" rows="6" required></textarea>
+                            </div>
+                            
+                            <button type="submit" class="submit-btn">Envoyer le message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="faq-section">
+                <h2>Questions fréquentes</h2>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Quels sont les modes de paiement acceptés?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Nous acceptons les paiements en espèces, par mobile money (MTN, Moov) et par virement bancaire.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Proposez-vous une garantie sur les produits?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Oui, toutes nos consoles sont garanties 3 mois et nos accessoires 1 mois. Les jeux neufs sont garantis contre les défauts de fabrication.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Combien de temps prend une réparation?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Le temps de réparation dépend de la panne et de la disponibilité des pièces. En général, une réparation simple prend 24 à 48 heures.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer (identique à index.html) -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <p>© 2025 Cardy-Store Bénin. Tous droits réservés.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <a href="#">Politique de Confidentialité</a>
+                    <a href="#">Conditions d'Utilisation</a>
+                </div>
+                
+                <div class="social-links">
+                    <a href="#" aria-label="WhatsApp">📱</a>
+                    <a href="#" aria-label="Facebook">📘</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+</html>

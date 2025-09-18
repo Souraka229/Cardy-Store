@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Catalogue complet des produits PlayStation disponibles chez Cardy-Store">
+    <title>Produits - Cardy-Store</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- Header (identique à index.html) -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="Logo Cardy-Store" class="logo-img">
+                    <span class="logo-text">CARDY-STORE</span>
+                </a>
+            </div>
+            
+            <nav class="nav">
+                <button class="nav-toggle" aria-label="Ouvrir le menu">
+                    <span class="hamburger"></span>
+                </button>
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Accueil</a></li>
+                    <li class="nav-item"><a href="produits.html" class="nav-link active">Produits</a></li>
+                    <li class="nav-item"><a href="index.html#services" class="nav-link">Services</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            
+            <div class="header-actions">
+                <button class="search-toggle" aria-label="Recherche">
+                    <img src="icons/search.svg" alt="Recherche" class="icon">
+                </button>
+                <div class="search-box">
+                    <input type="text" placeholder="Rechercher..." class="search-input">
+                    <button class="search-btn">🔍</button>
+                </div>
+                <a href="#" class="cart-icon" aria-label="Panier">
+                    <img src="icons/cart.svg" alt="Panier" class="icon">
+                    <span class="cart-count">0</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="products-page">
+        <div class="container">
+            <h1 class="page-title">Nos Produits</h1>
+            
+            <div class="products-controls">
+                <div class="filter-container">
+                    <select class="filter-select">
+                        <option value="all">Tous les produits</option>
+                        <option value="ps2">PS2</option>
+                        <option value="ps3">PS3</option>
+                        <option value="ps4">PS4</option>
+                        <option value="ps5">PS5</option>
+                        <option value="manettes">Manettes</option>
+                        <option value="jeux">Jeux</option>
+                        <option value="accessoires">Accessoires</option>
+                    </select>
+                </div>
+                
+                <div class="sort-container">
+                    <select class="sort-select">
+                        <option value="default">Trier par</option>
+                        <option value="price-asc">Prix croissant</option>
+                        <option value="price-desc">Prix décroissant</option>
+                        <option value="name">Nom</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="products-grid detailed">
+                <!-- PS5 Products -->
+                <div class="product-card" data-category="ps5" data-price="350000">
+                    <img src="images/ps5.jpg" alt="PlayStation 5" loading="lazy">
+                    <h3>PS5 Console</h3>
+                    <p class="product-desc">Console PlayStation 5 avec manette DualSense</p>
+                    <p class="product-price">350.000 FCFA</p>
+                    <button class="buy-btn">Ajouter au panier</button>
+                </div>
+                
+                <div class="product-card" data-category="ps5" data-price="25000">
+                    <img src="images/produits/jeu-ps5-1.jpg" alt="FIFA 23 PS5" loading="lazy">
+                    <h3>FIFA 23 PS5</h3>
+                    <p class="product-desc">Jeu FIFA 23 pour PlayStation 5</p>
+                    <p class="product-price">25.000 FCFA</p>
+                    <button class="buy-btn">Ajouter au panier</button>
+                </div>
+                
+                <div class="product-card" data-category="ps5" data-price="28000">
+                    <img src="images/produits/jeu-ps5-2.jpg" alt="Call of Duty PS5" loading="lazy">
+                    <h3>Call of Duty: MWII PS5</h3>
+                    <p class="product-desc">Jeu Call of Duty: Modern Warfare II</p>
+                    <p class="product-price">28.000 FCFA</p>
+                    <button class="buy-btn">Ajouter au panier</button>
+                </div>
+                
+                <!-- PS4 Products -->
+                <div class="product-card" data-category="ps4" data-price="150000">
+                    <img src="images/ps4.jpg" alt="PlayStation 4" loading="lazy">
+                    <h3>PS4 Slim 1TB</h3>
+                    <p class="product-desc">Console PlayStation 4 Slim avec 1TB de stockage</p>
+                    <p class="product-price">150.000 FCFA</p>
+                    <button class="buy-btn">Ajouter au panier</button>
+                </div>
+                
+                <div class="product-card" data-category="ps4" data-price="20000">
+                    <img src="images/produits/jeu-ps4-1.jpg" alt="Spider-Man PS4" loading="lazy">
+                    <h3>Spider-Man PS4</h3>
+                    <p class="product-desc">Jeu Spider-Man pour PlayStation 4</p>
+                    <p class="product-price">20.000 FCFA</p>
+                    <button class="buy-btn">Ajouter au panier</button>
+                </div>
+                
+                <div class="product-card" data-category="ps4" data-price="18000">
+                    <img src="images/produits/jeu-ps4-2.jpg" alt="God of War PS4" loading="lazy">
+                    <h3>God of War PS4</h3>
+                    <p class="product-desc">Jeu God of War pour PlayStation 4</p>
+                    <p class="product-price">18.000 FCFA</p>
+                    <button class="buy-btn">Ajouter au panier</button>
+                </div>
+                
+                <!-- PS3 Products -->
+                <div class="product-card" data-category="ps3" data-price="80000">
+                    <img src="images/ps3.jpg" alt="PlayStation 3" loading="lazy">
+                    <h3>PS3 Super Slim</h3>
+                    <p class="product-desc">Console PlayStation 3 Super Slim 500GB</p>
+                    <p class="product-price">80.000 FCFA</p>
+                    <button class="buy-btn">Ajouter au panier</button>
+                </div>
+                
+                <div class="product-card" data-category="ps3" data-price="10000">
+                    <img src="images/produits/jeu-ps3-1.jpg" alt="GTA V PS3" loading="lazy">
+                    <h3>GTA V PS3</h3>
+                    <p class="product-desc">Jeu Grand Theft Auto V pour PlayStation 3</p>
+                    <p class="product-price">10.000 FCFA</p>
+                    <button class="buy-btn">Ajouter au panier</button>
+                </div>
+                
+                <!-- PS2 Products -->
+                <div class="product-card" data-category="ps2" data-price="45000">
+                    <img src="images/ps2.jpg" alt="PlayStation 2" loading="lazy">
+                    <h3>PS2 Console</h3>
+                    <p class="product-desc">Console PlayStation 2 avec manette</p>
+                    <p class="product-price">45.000 FCFA</p>
+                    <button class="buy-btn">Ajouter au panier</button>
+                </div>
+                
+                <!-- Manettes -->
+                <div class="product-card" data-category="manettes" data-price="25000">
+                    <img src="images/produits/manette-ps5.jpg" alt="Manette PS5" loading="lazy">
+                    <h3>Manette PS5 DualSense</h3>
+                    <p class="product-desc">Manette DualSense pour PlayStation 5</p>
+                    <p class="product-price">25.000 FCFA</p>
+                    <button class="buy-btn">Ajouter au panier</button>
+                </div>
+                
+                <div class="product-card" data-category="manettes" data-price="15000">
+                    <img src="images/produits/manette-ps4.jpg" alt="Manette PS4" loading="lazy">
+                    <h3>Manette PS4 DualShock</h3>
+                    <p class="product-desc">Manette DualShock 4 pour PlayStation 4</p>
+                    <p class="product-price">15.000 FCFA</p>
+                    <button class="buy-btn">Ajouter au panier</button>
+                </div>
+                
+                <!-- Accessoires -->
+                <div class="product-card" data-category="accessoires" data-price="10000">
+                    <img src="images/produits/casque.jpg" alt="Casque Gaming" loading="lazy">
+                    <h3>Casque Gaming</h3>
+                    <p class="product-desc">Casque audio compatible PlayStation</p>
+                    <p class="product-price">10.000 FCFA</p>
+                    <button class="buy-btn">Ajouter au panier</button>
+                </div>
+            </div>
+            
+            <div class="pagination">
+                <a href="#" class="page-link active">1</a>
+                <a href="#" class="page-link">2</a>
+                <a href="#" class="page-link">3</a>
+                <a href="#" class="page-link">Suivant</a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer (identique à index.html) -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <p>© 2025 Cardy-Store Bénin. Tous droits réservés.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <a href="#">Politique de Confidentialité</a>
+                    <a href="#">Conditions d'Utilisation</a>
+                </div>
+                
+                <div class="social-links">
+                    <a href="#" aria-label="WhatsApp">📱</a>
+                    <a href="#" aria-label="Facebook">📘</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/products.js"></script>
+</body>
+</html>
