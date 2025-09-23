@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardy Store - Catalogue</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="menu-left">
+                <button class="menu-toggle">☰</button>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="catalogue.html">Catalogue</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="logo-center">
+                <a href="index.html"><img src="images/logo-cardy-store.png" alt="Cardy Store Logo" class="logo"></a>
+            </div>
+            <div class="search-right">
+                <div class="search-container">
+                    <input type="text" placeholder="Rechercher..." id="search-input">
+                    <button class="search-button">🔍</button>
+                </div>
+                <div class="cart-icon">
+                    <a href="panier.html">🛒 <span id="cart-count">0</span></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="page-title">
+        <h1>Catalogue</h1>
+    </section>
+
+    <section class="catalogue-grid" id="catalogue-products"></section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Cardy Store</h3>
+                <p>Menontin, Église Catholique, Cotonou</p>
+                <p>Tél: +229 01 66 36 47 30</p>
+                <p>WhatsApp: 0166364730</p>
+                <p>Horaires: Lun-Sam 8h-20h, Dim 10h-18h</p>
+            </div>
+            <div class="footer-section">
+                <h3>Liens Utiles</h3>
+                <ul>
+                    <li><a href="catalogue.html">Catalogue</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Cardy Store. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="js/produits.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/panier.js"></script>
+</body>
+</html>
